@@ -1,0 +1,10 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии*/
+:root {
+  --color-bg: #e5ded2;
+  --color-dark: #142841;
+  --color-accent: #490b12;
+  --color-muted: #798da6;
+  
+  --font-main: "Advaken_Sans", sans-serif;
+  --font-light: "Gros-Ventre-Light", serif;
+}

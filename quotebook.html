@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/globals.css" />
+    <link rel="icon" href=".\images\favicon.svg" sizes="32x32" />
+    <link rel="icon" href=".\images\favicon.svg" type="image/svg+xml" />
+    <title>цитатник</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="logo" href="">
+        <h1 class="logo-txt">"цитат<span>ник"</span></h1>
+        <img class="logo-img" src="ddd.png" alt="" />
+      </a>
+      <section class="section">
+        <nav class="categories">
+          <button class="active category" data-cat="writers">Писатели</button>
+          <button class="category" data-cat="artists">Художники</button>
+          <button class="category" data-cat="politicians">Политики</button>
+        </nav>
+        <button class="ambassar" id="ambassarBtn">Для ваших цитат</button>
+        <nav class="categories">
+          <button class="category" data-cat="scientists">Учёные</button>
+          <button class="category" data-cat="composers">Композиторы</button>
+          <button class="category" data-cat="users">Нынешние мыслители</button>
+        </nav>
+      </section>
+
+      <div class="modal-overlay" id="regModal">
+        <div class="modal">
+          <button type="button" id="closeRegModal" class="close-btn">×</button>
+          <h2>Регистрация</h2>
+          <form id="regForm">
+            <label for="regEmail">Email</label>
+            <input type="email" id="regEmail" required />
+            <label for="regName">Имя</label>
+            <input type="text" id="regName" required />
+            <label for="regSurname">Фамилия</label>
+            <input type="text" id="regSurname" required />
+            <button type="submit">Зарегистрироваться</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="slogan" id="slogan">
+        плыви <span>по течению</span> <span1>своих</span1> <span2>мыслей</span2>
+      </div>
+      <div class="quote-card" id="quoteCard">
+        <div class="author-placeholder" id="authorPhoto">А</div>
+        <div class="quote-content">
+          <p class="quote-text" id="quoteText"></p>
+          <p class="quote-author" id="quoteAuthor"></p>
+        </div>
+      </div>
+
+      <button class="next-btn" id="nextBtn" style="display: none">Далее</button>
+    </main>
+
+    <footer class="footer">
+      <div class="contacts">
+        <a href="mailto:info@citatsnik.ru">kakoytoemail@gmail.com .</a> | 8 (800) 555-55-35
+      </div>
+    </footer>
+    <script src="./scripts/quotes.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
